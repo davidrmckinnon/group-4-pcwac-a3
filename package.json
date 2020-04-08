@@ -1,7 +1,7 @@
 {
     "name": "assignment-3",
     "version": "1.0.0",
-    "description": "WCAG 2.0 Level 'A'-compliant template for Assignment 3",
+    "description": "WCAG 2.0 Level 'A'-compliant template for Professional Certificate in Web Accessibility Assignment 3",
     "main": "./js/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
