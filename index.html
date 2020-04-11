@@ -5,14 +5,454 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Project starter</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300i"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;0,700;0,800;0,900;1,100;1,600;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
     </head>
     <body>
-        <header></header>
-        <main>
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-        </main>
-        <footer></footer>
+        <div id="sidecarNav">
+            <div
+                id="mobileNavWrapper"
+                class="nav-wrapper"
+                data-content-field="navigation-mobileNav"
+            >
+                <nav id="mobileNavigation">
+                    <ul class="list__nav-mobile">
+                        <li class="folder">
+                            <p class="folder-toggle" data-href="/about">
+                                Who we are
+                            </p>
+                            <ul class="subnav">
+                                <li class="collection">
+                                    <a href="mission.html">
+                                        Mission
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="team.html">
+                                        Team
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="college.html">
+                                        Colleges
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="sponsors.html">
+                                        Sponsors
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="community.html">
+                                        Community
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="history.html">
+                                        History
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="board.html">
+                                        Board
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="join-us.html">
+                                        Join us!
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="news.html">
+                                        News
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="folder">
+                            <p class="folder-toggle" data-href="/programs">
+                                What we do
+                            </p>
+                            <ul class="subnav">
+                                <li class="collection">
+                                    <a href="cohorts.html">
+                                        Peer Cohorts
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="digital-marketing.html">
+                                        Digital Marketing
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="data-analytics.html">
+                                        Data Analytics
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="captains.html">
+                                        Cohort Captains
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="outcomes.html">
+                                        Program Outcomes
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="folder">
+                            <p class="folder-toggle" data-href="/apply">
+                                Apply
+                            </p>
+                            <ul class="subnav">
+                                <li class="collection">
+                                    <a href="fall2020.html">
+                                        Fall 2020
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="faq.html">
+                                        FAQ
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="captain-apply.html">
+                                        Captain
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="folder">
+                            <p class="folder-toggle" data-href="/hire">
+                                Hire
+                            </p>
+                            <ul class="subnav">
+                                <li class="collection">
+                                    <a href="why-coop.html">
+                                        Why COOP
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="nyc-candidates.html">
+                                        NYC Candidates
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="bay-candidates.html">
+                                        Bay Candidates
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="submitjob.html">
+                                        Submit a Job
+                                    </a>
+                                </li>
+
+                                <li class="collection">
+                                    <a href="partners.html">
+                                        Partners
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="external">
+                            <a
+                                href="https://secure.squarespace.com/checkout/donate?donatePageId=5ace84f2352f5331ba51f4d5"
+                            >
+                                Donate
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="siteWrapper" class="clearfix">
+            <header
+                id="header"
+                class="show-on-scroll"
+                data-offset-el=".index-section"
+                data-offset-behavior="bottom"
+                role="banner"
+            >
+                <div class="header-inner">
+                    <div
+                        id="logoWrapper"
+                        class="wrapper"
+                        data-content-field="site-title"
+                    >
+                        <h1 id="logoImage">
+                            <a href="index.html"
+                                ><img
+                                    src="https://static1.squarespace.com/static/52bcea0ee4b0eedea1b68c76/t/54ff0a10e4b029c9dc22062e/1585157949794/?format=1500w"
+                                    alt="COOP Careers"
+                            /></a>
+                        </h1>
+                    </div>
+
+                    <div class="mobile-nav-toggle">
+                        <div class="top-bar"></div>
+                        <div class="middle-bar"></div>
+                        <div class="bottom-bar"></div>
+                    </div>
+                    <div class="mobile-nav-toggle fixed-nav-toggle">
+                        <div class="top-bar"></div>
+                        <div class="middle-bar"></div>
+                        <div class="bottom-bar"></div>
+                    </div>
+                    <div id="headerNav">
+                        <div
+                            id="mainNavWrapper"
+                            class="nav-wrapper"
+                            data-content-field="navigation-mainNav"
+                        >
+                            <nav
+                                id="mainNavigation"
+                                data-content-field="navigation-mainNav"
+                            >
+                                <ul class="list__nav-main">
+                                    <li class="folder">
+                                        <p
+                                            class="folder-toggle"
+                                            data-href="/about"
+                                        >
+                                            Who we are
+                                        </p>
+                                        <ul class="subnav">
+                                            <li class="collection">
+                                                <a href="mission.html">
+                                                    Mission
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="team.html">
+                                                    Team
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="college.html">
+                                                    Colleges
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="sponsors.html">
+                                                    Sponsors
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="community.html">
+                                                    Community
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="history.html">
+                                                    History
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="board.html">
+                                                    Board
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="join-us.html">
+                                                    Join us!
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="news.html">
+                                                    News
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="folder">
+                                        <p
+                                            class="folder-toggle"
+                                            data-href="/programs"
+                                        >
+                                            What we do
+                                        </p>
+                                        <ul class="subnav">
+                                            <li class="collection">
+                                                <a href="cohorts.html">
+                                                    Peer Cohorts
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a
+                                                    href="digital-marketing.html"
+                                                >
+                                                    Digital Marketing
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="data-analytics.html">
+                                                    Data Analytics
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="captains.html">
+                                                    Cohort Captains
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="outcomes.html">
+                                                    Program Outcomes
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="folder">
+                                        <p
+                                            class="folder-toggle"
+                                            data-href="/apply"
+                                        >
+                                            Apply
+                                        </p>
+                                        <ul class="subnav">
+                                            <li class="collection">
+                                                <a href="fall2020.html">
+                                                    Fall 2020
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="faq.html">
+                                                    FAQ
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="captain-apply.html">
+                                                    Captain
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="folder">
+                                        <p
+                                            class="folder-toggle"
+                                            data-href="/hire"
+                                        >
+                                            Hire
+                                        </p>
+                                        <ul class="subnav">
+                                            <li class="collection">
+                                                <a href="why-coop.html">
+                                                    Why COOP
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="nyc-candidates.html">
+                                                    NYC Candidates
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="bay-candidates.html">
+                                                    Bay Candidates
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="submitjob.html">
+                                                    Submit a Job
+                                                </a>
+                                            </li>
+
+                                            <li class="collection">
+                                                <a href="partners.html">
+                                                    Partners
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="external">
+                                        <a
+                                            href="https://secure.squarespace.com/checkout/donate?donatePageId=5ace84f2352f5331ba51f4d5"
+                                        >
+                                            Donate
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- style below blocks out the mobile nav toggle only when nav is loaded -->
+                        <style>
+                            .mobile-nav-toggle-label {
+                                display: inline-block !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </header>
+            <main id="page">
+                <h1>Overcoming underemployment</h1>
+                <p>
+                    Building a diverse movement of upwardly mobile college grads
+                    overcoming underemployment through digital skills and peer
+                    connections.
+                </p>
+                <div class="sqs-block button-block sqs-block-button">
+                    <div class="sqs-block-content">
+                        <div class="sqs-block-button-container--center">
+                            <a
+                                href="/2minutes"
+                                class="sqs-block-button-element--medium sqs-block-button-element"
+                                >Intro video</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer></footer>
+        </div>
     </body>
 </html>
