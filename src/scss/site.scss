@@ -8256,6 +8256,9 @@ body:not(.event-like-and-share-buttons) .event-meta-socialicon-container {
 .social-icon-alignment-center .sqs-svg-icon--list {
     text-align: center;
 }
+.sqs-svg-icon--list ul li {
+    display: inline-block;
+}
 .social-icons-size-extra-small.social-icon-alignment-left
     .sqs-svg-icon--wrapper {
     margin: 0 6px 0 0;
@@ -19186,25 +19189,25 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     body:not(.force-mobile-nav) .nav-wrapper {
         position: relative;
     }
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul {
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li {
         display: inline-block;
         vertical-align: middle;
         margin: 0;
     }
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul a,
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul .folder-toggle {
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li a,
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li .folder-toggle {
         -webkit-transition: color 0.1s 0s ease-in-out;
         -moz-transition: color 0.1s 0s ease-in-out;
         -ms-transition: color 0.1s 0s ease-in-out;
         -o-transition: color 0.1s 0s ease-in-out;
         transition: color 0.1s 0s ease-in-out;
     }
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul > a,
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul .folder-toggle {
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li > a,
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li .folder-toggle {
         display: block;
         padding: 0.75em 1em;
     }
-    body:not(.force-mobile-nav) .nav-wrapper nav > ul:last-child > a,
+    body:not(.force-mobile-nav) .nav-wrapper nav > ul li:last-child > a,
     body:not(.force-mobile-nav)
         .nav-wrapper
         nav
@@ -19265,7 +19268,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
         .nav-wrapper
         .folder
         .subnav
-        > div {
+        > li {
         opacity: 0;
         padding: 0;
         -webkit-transition: opacity 0.05s 0s ease-in-out;
@@ -19279,7 +19282,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
         .nav-wrapper
         .folder
         .subnav
-        > div
+        > li
         a {
         display: block;
         padding: 0.5em 1.5em;
@@ -19313,7 +19316,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
         .nav-wrapper
         .folder:hover
         .subnav
-        > div {
+        > li {
         opacity: 1;
         -webkit-transition: opacity 0.14s 0.14s ease-in-out;
         -moz-transition: opacity 0.14s 0.14s ease-in-out;
@@ -19388,21 +19391,22 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
 .force-mobile-nav #secondaryNavWrapper.nav-wrapper {
     position: relative;
 }
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul {
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul li {
     display: inline-block;
     vertical-align: middle;
     margin: 0;
 }
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul > a,
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul .folder-toggle {
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul li > a,
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul li .folder-toggle {
     display: block;
     padding: 0.75em 1em;
 }
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul:first-child > a,
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper nav > ul li:first-child > a,
 .force-mobile-nav
     #secondaryNavWrapper.nav-wrapper
     nav
-    > div:first-child
+    > ul
+    li:first-child
     .folder-toggle {
     padding-left: 0;
 }
@@ -19435,7 +19439,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     -o-transition: -o-transform 0.14s 0s ease-in-out;
     transition: transform 0.14s 0s ease-in-out;
 }
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper .folder .subnav > ul {
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper .folder .subnav > ul li {
     opacity: 0;
     padding: 0;
     -webkit-transition: opacity 0.05s 0s ease-in-out;
@@ -19444,7 +19448,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     -o-transition: opacity 0.05s 0s ease-in-out;
     transition: opacity 0.05s 0s ease-in-out;
 }
-.force-mobile-nav #secondaryNavWrapper.nav-wrapper .folder .subnav > ul a {
+.force-mobile-nav #secondaryNavWrapper.nav-wrapper .folder .subnav > ul li a {
     display: block;
     padding: 0.5em 1.5em;
     -webkit-transform: translatez(0);
@@ -19530,10 +19534,10 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     display: block;
     padding: 0.75em 0;
 }
-#sidecarNav nav div .subnav > ul a {
+#sidecarNav nav div .subnav > ul li a {
     padding: 0 0 0.5em;
 }
-#sidecarNav nav div .subnav > ul:last-child a {
+#sidecarNav nav div .subnav > ul li:last-child a {
     padding-bottom: 1em;
 }
 .force-mobile-nav #header #headerNav {
@@ -19555,7 +19559,6 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     right: 20px;
     margin-top: -8px;
     padding: 0;
-    vertical-align: middle;
     line-height: 16px;
     text-align: right;
     cursor: pointer;
@@ -19638,10 +19641,10 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     display: block;
     padding: 0.75em 0;
 }
-.force-mobile-nav #mainNavWrapper nav div .subnav > ul a {
+.force-mobile-nav #mainNavWrapper nav div .subnav > ul li a {
     padding: 0 0 0.5em;
 }
-.force-mobile-nav #mainNavWrapper nav div .subnav > ul:last-child a {
+.force-mobile-nav #mainNavWrapper nav div .subnav > ul li:last-child a {
     padding-bottom: 1em;
 }
 .force-mobile-nav #siteWrapper {
@@ -19707,7 +19710,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
 .force-mobile-nav.enable-nav-button
     #sidecarNav
     nav
-    > div:not(.folder):last-child
+    > ul
+    > li:not(.folder):last-child
     a {
     display: inline-block;
     margin: 1em 0 0 0;
@@ -19720,8 +19724,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
 .mobile-nav-toggle {
     display: none;
 }
-.enable-nav-button #headerNav nav > ul:not(.folder):last-child a,
-.enable-nav-button #sidecarNav nav > ul:not(.folder):last-child a {
+.enable-nav-button #headerNav nav > ul > li:not(.folder):last-child a,
+.enable-nav-button #sidecarNav nav > ul > li:not(.folder):last-child a {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
@@ -19747,19 +19751,22 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
         color 0.1s 0s ease-in-out;
     transition: background-color 0.1s 0s ease-in-out, color 0.1s 0s ease-in-out;
 }
-.enable-nav-button #headerNav nav > ul:not(.folder):last-child a:hover,
-.enable-nav-button #sidecarNav nav > ul:not(.folder):last-child a:hover {
+.enable-nav-button #headerNav nav > ul > li:not(.folder):last-child a:hover,
+.enable-nav-button #sidecarNav nav > ul > li:not(.folder):last-child a:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
+
 .nav-button-style-outline.enable-nav-button
     #headerNav
     nav
-    > div:not(.folder):last-child
+    > ul
+    > li:not(.folder):last-child
     a,
 .nav-button-style-outline.enable-nav-button
     #sidecarNav
     nav
-    > div:not(.folder):last-child
+    > ul
+    > li:not(.folder):last-child
     a {
     background-color: transparent;
     -moz-osx-font-smoothing: grayscale;
@@ -19767,70 +19774,21 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     border: 2px solid #fff;
     color: #fff;
 }
+
 .nav-button-style-outline.enable-nav-button
     #headerNav
     nav
-    > div:not(.folder):last-child
+    > ul
+    > li:not(.folder):last-child
     a:hover,
 .nav-button-style-outline.enable-nav-button
     #sidecarNav
     nav
-    > div:not(.folder):last-child
+    > ul
+    > li:not(.folder):last-child
     a:hover {
     background-color: #fff;
     color: #181818;
-}
-.nav-button-style-raised.enable-nav-button
-    #headerNav
-    nav
-    > div:not(.folder):last-child
-    a,
-.nav-button-style-raised.enable-nav-button
-    #sidecarNav
-    nav
-    > div:not(.folder):last-child
-    a {
-    -webkit-box-shadow: 0px 0.2em 0px 0px #ebebeb;
-    -moz-box-shadow: 0px 0.2em 0px 0px #ebebeb;
-    box-shadow: 0px 0.2em 0px 0px #ebebeb;
-}
-.nav-button-style-raised.enable-nav-button
-    #headerNav
-    nav
-    > div:not(.folder):last-child
-    a:hover,
-.nav-button-style-raised.enable-nav-button
-    #sidecarNav
-    nav
-    > div:not(.folder):last-child
-    a:hover {
-    background-color: #fff;
-}
-.nav-button-corner-style-rounded.enable-nav-button
-    #headerNav
-    nav
-    > div:not(.folder):last-child
-    a,
-.nav-button-corner-style-rounded.enable-nav-button
-    #sidecarNav
-    nav
-    > div:not(.folder):last-child
-    a {
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-}
-.nav-button-corner-style-pill.enable-nav-button
-    #headerNav
-    nav
-    > div:not(.folder):last-child
-    a,
-.nav-button-corner-style-pill.enable-nav-button
-    #sidecarNav
-    nav
-    > div:not(.folder):last-child
-    a {
-    -webkit-border-radius: 300px;
-    border-radius: 300px;
 }
 .back-to-top-nav {
     display: none;
@@ -19842,8 +19800,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill.has-promoted-
     line-height: 1.25em;
     right: auto;
 }
-#secondaryNavWrapper nav > ul:first-child > a,
-#secondaryNavWrapper nav > ul:first-child .folder-toggle {
+#secondaryNavWrapper nav > ul li:first-child > a,
+#secondaryNavWrapper nav > ul li:first-child .folder-toggle {
     padding-left: 0;
 }
 #siteInfo {
@@ -21689,7 +21647,14 @@ html.touch
         transform: rotate(-45deg);
         top: 7px;
     }
-    .enable-nav-button #sidecarNav nav > ul:not(.folder):last-child a {
+    .enable-nav-button
+        #sidecarNav
+        nav
+        > ul
+        li
+        ul:not(.subnav)
+        li:not(.folder):last-child
+        a {
         display: inline-block;
         margin: 0.75em 0 0 0;
         line-height: 1;

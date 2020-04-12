@@ -7,3 +7,54 @@ h1,
 h2 {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+#headerNav .nav-wrapper nav > ul li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+#headerNav .nav-wrapper nav > ul li .subnav li {
+    display: block;
+}
+
+.breakout {
+    font-size: 0.9166666667em;
+    line-height: 1.4;
+    text-align: center;
+}
+@media only screen and (min-width: 640px) {
+    .breakout {
+        font-size: 1.6667em;
+    }
+}
+
+#secondaryNavWrapper {
+    text-align: center;
+}
+
+#footerBlocks {
+    p {
+        text-align: center;
+        &.h-card {
+            font-weight: 700;
+        }
+        small {
+            font-weight: 400;
+        }
+    }
+}
+// Only display content to screen readers
+//
+// See: https://a11yproject.com/posts/how-to-hide-content
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
