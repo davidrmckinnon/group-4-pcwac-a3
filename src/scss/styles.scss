@@ -251,8 +251,11 @@ nav ul {
 .social-icon-alignment-center .sqs-svg-icon--list {
     text-align: center;
 }
-.sqs-svg-icon--list ul li {
-    display: inline-block;
+.sqs-svg-icon--list ul {
+    padding-inline-start: 0;
+    li {
+        display: inline-block;
+    }
 }
 .social-icons-size-small.social-icon-alignment-center .sqs-svg-icon--wrapper {
     margin: 0 4px;
@@ -1808,7 +1811,9 @@ blockquote {
 #headerNav nav a:visited:hover,
 #sidecarNav nav a:visited:hover,
 #headerNav nav .folder-toggle:hover,
-#sidecarNav nav .folder-toggle:hover {
+#sidecarNav nav .folder-toggle:hover,
+#headerNav nav .folder-toggle:focus,
+#sidecarNav nav .folder-toggle:focus {
     color: #fc0;
 }
 #headerNav nav .subnav,
@@ -2020,6 +2025,9 @@ blockquote {
     -webkit-font-smoothing: antialiased;
     border: 2px solid #fff;
     color: #fff;
+    &:focus {
+        border-color: #fc0;
+    }
 }
 .nav-button-style-outline.enable-nav-button
     #headerNav

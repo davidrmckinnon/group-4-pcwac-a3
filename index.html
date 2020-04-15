@@ -25,10 +25,14 @@
                 class="nav-wrapper"
                 data-content-field="navigation-mobileNav"
             >
-                <nav id="mobileNavigation">
+                <nav
+                    id="mobileNavigation"
+                    aria-labelledby="primary-navigation-mobile"
+                >
+                    <h2 id="primary-navigation-mobile" class="sr-only">Primary navigation</h2>
                     <ul class="list__nav-mobile">
                         <li class="folder">
-                            <p class="folder-toggle" data-href="/about">
+                            <p class="folder-toggle" tabindex="0" data-href="/about">
                                 Who we are
                             </p>
                             <ul class="subnav">
@@ -89,7 +93,7 @@
                         </li>
 
                         <li class="folder">
-                            <p class="folder-toggle" data-href="/programs">
+                            <p class="folder-toggle" tabindex="0" data-href="/programs">
                                 What we do
                             </p>
                             <ul class="subnav">
@@ -126,7 +130,7 @@
                         </li>
 
                         <li class="folder">
-                            <p class="folder-toggle" data-href="/apply">
+                            <p class="folder-toggle" tabindex="0" data-href="/apply">
                                 Apply
                             </p>
                             <ul class="subnav">
@@ -151,7 +155,7 @@
                         </li>
 
                         <li class="folder">
-                            <p class="folder-toggle" data-href="/hire">
+                            <p class="folder-toggle" tabindex="0" data-href="/hire">
                                 Hire
                             </p>
                             <ul class="subnav">
@@ -239,16 +243,14 @@
                         >
                             <nav
                                 id="mainNavigation"
-                                data-content-field="navigation-mainNav"
+                                aria-labelledby="primary-navigation"
                             >
+                                <h2 id="primary-navigation" class="sr-only">
+                                    Primary navigation
+                                </h2>
                                 <ul class="list__nav-main">
                                     <li class="folder">
-                                        <p
-                                            class="folder-toggle"
-                                            data-href="/about"
-                                        >
-                                            Who we are
-                                        </p>
+                                        <p class="folder-toggle" tabindex="0" data-href="/about">Who we are</p>
                                         <ul class="subnav">
                                             <li class="collection">
                                                 <a href="mission.html">
@@ -307,12 +309,7 @@
                                     </li>
 
                                     <li class="folder">
-                                        <p
-                                            class="folder-toggle"
-                                            data-href="/programs"
-                                        >
-                                            What we do
-                                        </p>
+                                        <p class="folder-toggle" tabindex="0" data-href="/programs">What we do</p>
                                         <ul class="subnav">
                                             <li class="collection">
                                                 <a href="cohorts.html">
@@ -349,12 +346,7 @@
                                     </li>
 
                                     <li class="folder">
-                                        <p
-                                            class="folder-toggle"
-                                            data-href="/apply"
-                                        >
-                                            Apply
-                                        </p>
+                                        <p class="folder-toggle" tabindex="0" data-href="/apply">Apply</p>
                                         <ul class="subnav">
                                             <li class="collection">
                                                 <a href="fall2020.html">
@@ -377,12 +369,7 @@
                                     </li>
 
                                     <li class="folder">
-                                        <p
-                                            class="folder-toggle"
-                                            data-href="/hire"
-                                        >
-                                            Hire
-                                        </p>
+                                        <p class="folder-toggle" tabindex="0" data-href="/hire">Hire</p>
                                         <ul class="subnav">
                                             <li class="collection">
                                                 <a href="why-coop.html">
@@ -489,7 +476,7 @@
                         <div
                             class="sqs-svg-icon--outer social-icon-alignment-center social-icons-color-black social-icons-size-small social-icons-style-regular"
                         >
-                            <nav class="sqs-svg-icon--list">
+                            <div class="sqs-svg-icon--list">
                                 <ul class="list__nav-social">
                                     <li>
                                         <a
@@ -803,14 +790,13 @@
             <footer id="footer" role="contentinfo">
                 <div class="footer-inner">
                     <div class="nav-wrapper back-to-top-nav">
-                        <nav>
-                            <div class="back-to-top">
-                                <a href="#header">Back to Top</a>
-                            </div>
-                        </nav>
+                        <div class="back-to-top">
+                            <a href="#header">Back to Top</a>
+                        </div>
                     </div>
                     <div id="secondaryNavWrapper" class="nav-wrapper">
-                        <nav id="secondaryNavigation">
+                        <nav id="secondaryNavigation" aria-labelledby="footer-navigation">
+                            <h2 id="footer-navigation" class="sr-only">Footer navigation</h2>
                             <ul class="list__nav-secondary">
                                 <li class="collection active homepage">
                                     <a href="index.html">
@@ -852,7 +838,7 @@
                                         <div
                                             class="sqs-svg-icon--outer social-icon-alignment-center social-icons-color-white social-icons-size-medium social-icons-shape-circle social-icons-style-knockout"
                                         >
-                                            <nav class="sqs-svg-icon--list">
+                                            <div class="sqs-svg-icon--list">
                                                 <ul class="list__nav-social">
                                                     <li>
                                                         <a
