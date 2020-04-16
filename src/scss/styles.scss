@@ -2323,3 +2323,47 @@ h2 {
     position: absolute;
     width: 1px;
 }
+
+.skip-to-content {
+    background: #ffcc00;
+    border: 2px solid #fc0;
+    color: #000;
+    left: 40%;
+    padding: 6px 20px;
+    position: absolute;
+    top: -65px;
+    transition: top 1s ease-out;
+    z-index: 100;
+
+    &:after,
+    &:before {
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        left: 50%;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        width: 0;
+    }
+
+    &:after {
+        border-color: rgba(255, 204, 0, 0);
+        border-top-color: #ffcc00;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    &:before {
+        border-color: rgba(255, 204, 0, 0);
+        border-top-color: #fc0;
+        border-width: 13px;
+        margin-left: -13px;
+    }
+
+    &:focus {
+        position: absolute;
+        top: 0;
+        outline-color: transparent;
+        transition: top 0.1s ease-in;
+    }
+}

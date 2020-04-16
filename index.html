@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Project starter</title>
+        <title>COOP Careers - Template</title>
         <link
             rel="stylesheet"
             type="text/css"
@@ -19,7 +19,8 @@
     <body
         class="transparent-header enable-nav-button nav-button-style-outline nav-button-corner-style-square banner-button-style-outline banner-button-corner-style-square homepage mobile-style-available has-banner-image general-page"
     >
-        <div id="sidecarNav">
+        <a class="skip-to-content" href="#page">Skip to main content</a>
+         <div id="sidecarNav">
             <div
                 id="mobileNavWrapper"
                 class="nav-wrapper"
@@ -192,11 +193,7 @@
                         </li>
 
                         <li class="external">
-                            <a
-                                href="https://secure.squarespace.com/checkout/donate?donatePageId=5ace84f2352f5331ba51f4d5"
-                            >
-                                Donate
-                            </a>
+                            <a href="#">Donate</a>
                         </li>
                     </ul>
                 </nav>
@@ -206,15 +203,12 @@
             <header
                 id="header"
                 class="show-on-scroll"
-                data-offset-el=".index-section"
-                data-offset-behavior="bottom"
                 role="banner"
             >
                 <div class="header-inner">
                     <div
                         id="logoWrapper"
-                        class="wrapper"
-                        data-content-field="site-title"
+                        class="site-title"
                     >
                         <h1 id="logoImage">
                             <a href="index.html"
@@ -450,7 +444,7 @@
                     />
                 </figure>
             </div>
-            <main id="page">
+            <main id="page" role="main" aria-label="main content">
                 <h2>[h2] Overcoming underemployment</h2>
                 <p class="breakout">
                     [p.breakout] Building a diverse movement of upwardly mobile
@@ -477,7 +471,8 @@
                             class="sqs-svg-icon--outer social-icon-alignment-center social-icons-color-black social-icons-size-small social-icons-style-regular"
                         >
                             <div class="sqs-svg-icon--list">
-                                <ul class="list__nav-social">
+                                <h2 id="social-media-links" class="sr-only">Social media links</h2>
+                                <ul class="list__nav-social" aria-labelledby="social-media-links">
                                     <li>
                                         <a
                                             href="https://www.facebook.com/cooperate.nyc"
@@ -787,7 +782,7 @@
                     </div>
                 </div>
             </main>
-            <footer id="footer" role="contentinfo">
+            <footer id="footer" role="Region" arialabel="Footer">
                 <div class="footer-inner">
                     <div class="nav-wrapper back-to-top-nav">
                         <div class="back-to-top">
@@ -839,7 +834,7 @@
                                             class="sqs-svg-icon--outer social-icon-alignment-center social-icons-color-white social-icons-size-medium social-icons-shape-circle social-icons-style-knockout"
                                         >
                                             <div class="sqs-svg-icon--list">
-                                                <ul class="list__nav-social">
+                                                <ul class="list__nav-social" aria-labelledby="social-media-links">
                                                     <li>
                                                         <a
                                                             href="https://www.facebook.com/cooperate.nyc"
@@ -1041,6 +1036,7 @@
                                 </div>
                                 <div
                                     class="sqs-block html-block sqs-block-html"
+                                    role="contentinfo"
                                 >
                                     <div class="sqs-block-content">
                                         <p class="h-card">
