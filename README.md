@@ -22,4 +22,4 @@ Running
 
 `npm start`
 
-will compile the site an upen it in your default browser on `localhost:3000`
+will compile the site and open it in your default browser on `localhost:3000`
